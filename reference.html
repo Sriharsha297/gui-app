@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="linkers/major.js"></script> 
+    <title>Major Project</title>
+    <style>
+      body{
+        background-image: linear-gradient(to right, #7ed56f, #28b485);
+        /* background-repeat: no-repeat;
+        background-size: cover; */
+      }
+      #home{
+        margin-top: 50px;
+        text-align: center;
+      }
+      #hahah{
+        background-color: #E9F7EF ;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+        <div class="jumbotron" id="home">
+          <h2>IMAGE PROCESSING EDGE DETECTION TECHNIQUE FOR TRAFFIC CONTROL PROBLEM</h2>
+        </div>
+        <br>
+
+        <a href="index.html" class="btn btn-danger btn-lg">
+           Stop Application
+        </a>
+    <div class="jumbotron" id="hahah">
+    <div class="row">
+        <div class="col text-center">
+        <h3>Select The Reference Image</h3>
+        </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-4 ">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top"  id="ref" src="icon-no-image.svg" height="285px"  alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">
+              <label for="img">Select Reference image:</label>
+              <input style="width: 15rem;" class="btn btn-primary " type="file"  onchange="readReferenceURL(this,'ref');">
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <br/>
+    <div class="row">
+      <div class="col text-center">
+        <button class="btn btn-success" onclick="window.location.href = 'lanes.html';">Next</button>
+      </div>
+    </div>
+    </div>
+    <br>
+  </div>
+  </body>
+</html>

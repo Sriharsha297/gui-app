@@ -11,16 +11,16 @@ argv = sys.argv
 
 def findTime(pc):
     if(pc >= 90 and pc < 100 ):
-        print('Green Light for 90 Seconds')
+        print("<li class='list-group-item'>Green Light for 90 Seconds</li></ul></br>")
     elif(pc >= 85 and pc < 90 ):
-        print('Green Light for 60 Seconds')
+        print("<li class='list-group-item'>Green Light for 60 Seconds</li></ul></br>")
 
     elif(pc >= 79 and pc < 85 ):
-        print('Green Light for 40 Seconds')
+        print("<li class='list-group-item'>Green Light for 40 Seconds</li></ul></br>")
     elif(pc >= 55 and pc < 79 ):
-        print('Green Light for 20 Seconds')
+        print("<li class='list-group-item'>Green Light for 20 Seconds</li></ul></br>")
     else:
-        print('No Green Light')
+        print("<li class='list-group-item'>No Green Light</li></ul></br>")
 
 # refernce image
 
@@ -80,9 +80,10 @@ for key, value in L:
         order = order +" -> "+key
     i = FALSE
 
-print(order)
+print("<h4>Priority of Lanes  </h4></br>")
+print("<div id='priority'>"+order+"</div></br>")
 
-print("Finding Time Allocation for each Lane")
+print("<h4>Time Allocation for each Lanes are</h4></br>")
 
 
 
@@ -97,13 +98,13 @@ pcLane4 = int( ( ( len(kp_4) - len(kp) ) / len(kp_4) ) * 100)
 
 
 
-print("Lane 1")
+print("<ul class='list-group'><li class='list-group-item'>Lane 1</li>")
 findTime(pcLane1)
-print("Lane 2")
+print("<ul class='list-group'><li class='list-group-item'>Lane 2</li>")
 findTime(pcLane2)
-print("Lane 3")
+print("<ul class='list-group'><li class='list-group-item'>Lane 3</li>")
 findTime(pcLane3)
-print("Lane 4")
+print("<ul class='list-group'><li class='list-group-item'>Lane 4</li>")
 findTime(pcLane4)
 
 
